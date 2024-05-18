@@ -4,6 +4,7 @@ export const AboutPage = () => {
       <br></br>
       <br></br>
       <h2>Welcome to our To-Do List App! 📝</h2>
+      <br/>
       <p>
         My mission is to provide you with a simple yet powerful tool to organize
         your tasks and boost your productivity. You can easily create, manage,
