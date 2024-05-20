@@ -12,17 +12,20 @@ import tasksJSON from "./tasks.json";
 import TodoDetailsPage from "./pages/TodoDetailsPage";
 
 function App() {
+  //Inicialize state with tasks from JSON
   const [tasks, setTasks] = useState(tasksJSON);
 
+  //Function to add a new task
   const addNewTask = (newTask) => {
     const updatedTasks = [newTask, ...tasks];
     setTasks(updatedTasks);
   };
 
+  //Function to delete a task based on ID
   const handleDeleteTask = (taskId) => {
-    const copyTask = structuredClone(tasks);
-    const updateTasks = copyTask.filter((task, index) => index !== taskId);
-    setTasks(updateTasks);
+    const copyTask = structuredClone(tasks); //Create a copy of the tasks
+    const updateTasks = copyTask.filter((task, index) => index !== taskId); //Filter out the task with the given ID
+    setTasks(updateTasks); //Update the state with the filtered task list
   };
 
   return (

@@ -7,19 +7,16 @@ const Sidebar = () => {
   const shouldRenderSidebar = sidebarPaths.includes(location.pathname);
   return shouldRenderSidebar ? (
     <aside className="sidebar">
-      {" "}
       <div className="sidebar-inner">
-        {" "}
         <ul>
-          {" "}
           <li>
             <a href="/more-info">More Info</a>
-          </li>{" "}
+          </li>
           <li>
             <a href="/about">About</a>
-          </li>{" "}
-        </ul>{" "}
-      </div>{" "}
+          </li>
+        </ul>
+      </div>
     </aside>
   ) : null;
 };
