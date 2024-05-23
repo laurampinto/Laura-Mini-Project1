@@ -18,14 +18,14 @@ footer {
 }
 
 .sidebar {
-  background-color: rgb(230, 221, 201); 
+  background-color: rgb(230, 221, 201);
   color: #fff;
-  width: 200px; 
-  height: 100vh; 
-  position: fixed; 
+  width: 200px;
+  height: 100vh;
+  position: fixed;
   top: 0;
-  left: 0; 
-  padding-top: 60px; 
+  left: 0;
+  padding-top: 60px;
   margin-top: 64.9px;
 }
 .sidebar-inner {

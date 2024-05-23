@@ -16,16 +16,16 @@ function AddTodoForm({ addNewTask }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={task}
-        onChange={handleTaskInput}
-      />
+      <label className="newTaskText">Insert here a new task </label>
+      <input type="text" value={task} onChange={handleTaskInput} />
+      <br/>
+      <label>If it is already done, click here!</label>
       <input
         type="checkbox"
         checked={completed}
         onChange={handleCompletedInput}
       />
+      <br/>
       <button type="submit">Add Task</button>
     </form>
   );
